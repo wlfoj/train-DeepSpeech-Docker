@@ -2,10 +2,10 @@ import sys
 import csv
 
 class ProcessPhrases():
-    '''Classe para realizar o processamento dos textos'''
+    '''Classe com métodos staticos para realizar o processamento dos textos'''
 
     @classmethod
-    def cleanText(self, pathTest: str, pathTrain: str, pathDev: str):
+    def cleanPartiallyText(self, pathTest: str, pathTrain: str, pathDev: str):
         '''Método para realizar uma limpeza básica nos carcteres lixos'''
         # 0-> path test    1-> path train   2-> path dev
         arquivos = [pathTest, pathTrain, pathDev]
@@ -127,3 +127,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#python processData.py --path1 --path2 --path3
